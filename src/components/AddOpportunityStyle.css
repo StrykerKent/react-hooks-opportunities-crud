@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form > .MuiFormControl-marginNormal:nth-child(1) {
+  margin-top: 0px;
+}
+
+form > button {
+  margin-top: 1rem !important;
+}
+
+/* button {
+  display: block;
+  max-width: 50px;
+} */
+
+/* button {
+  margin-top: 1rem !important;
+} */
