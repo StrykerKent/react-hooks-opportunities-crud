@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/strykerkent.github.io/react-hooks-opportunities-crud/static/css/main.dcf3141f.chunk.css",
+    "main.js": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/main.0ea5e60c.chunk.js",
+    "main.js.map": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/main.0ea5e60c.chunk.js.map",
+    "runtime-main.js": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/runtime-main.cacd9a0a.js",
+    "runtime-main.js.map": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/runtime-main.cacd9a0a.js.map",
+    "static/js/2.062c9cc3.chunk.js": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/2.062c9cc3.chunk.js",
+    "static/js/2.062c9cc3.chunk.js.map": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/2.062c9cc3.chunk.js.map",
+    "static/js/3.4fc2ca24.chunk.js": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/3.4fc2ca24.chunk.js",
+    "static/js/3.4fc2ca24.chunk.js.map": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/3.4fc2ca24.chunk.js.map",
+    "index.html": "/strykerkent.github.io/react-hooks-opportunities-crud/index.html",
+    "static/css/main.dcf3141f.chunk.css.map": "/strykerkent.github.io/react-hooks-opportunities-crud/static/css/main.dcf3141f.chunk.css.map",
+    "static/js/2.062c9cc3.chunk.js.LICENSE.txt": "/strykerkent.github.io/react-hooks-opportunities-crud/static/js/2.062c9cc3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cacd9a0a.js",
+    "static/js/2.062c9cc3.chunk.js",
+    "static/css/main.dcf3141f.chunk.css",
+    "static/js/main.0ea5e60c.chunk.js"
+  ]
+}
