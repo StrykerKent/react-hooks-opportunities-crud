@@ -1,3 +1,6 @@
 th {
   text-transform: uppercase;
 }
+table button:first-child {
+  margin-right: 1.5rem;
+}

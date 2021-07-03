@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -7,11 +7,11 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-import './OpportunityTableStyle.css'
+import './OpportunityTableStyle.css';
 
 const OpportunityTable = (props) => (
   <TableContainer component={Paper}>
-    <Table aria-label="table">
+    <Table aria-label='table'>
       <TableHead>
         <TableRow>
           <TableCell>Name</TableCell>
@@ -23,18 +23,25 @@ const OpportunityTable = (props) => (
       <TableBody>
         {props.opportunities.map((opportunity) => (
           <TableRow key={opportunity.id}>
-            <TableCell scope="row">
-              {opportunity.name}
-            </TableCell>
+            <TableCell scope='row'>{opportunity.name}</TableCell>
             <TableCell>{opportunity.account}</TableCell>
             <TableCell>{opportunity.location}</TableCell>
             <TableCell>
               <Button
-                type="submit"
-                variant="contained"
-                color="secondary"
-                size="large"
-                mt={2}
+                type='submit'
+                color='primary'
+                size='large'
+                mr={2}
+                onClick={() => {
+                  props.editRow(opportunity);
+                }}
+              >
+                Edit
+              </Button>
+              <Button
+                type='submit'
+                color='secondary'
+                size='large'
                 onClick={() => props.deleteOpportunity(opportunity.id)}
               >
                 Delete
@@ -45,6 +52,6 @@ const OpportunityTable = (props) => (
       </TableBody>
     </Table>
   </TableContainer>
-)
+);
 
-export default OpportunityTable
+export default OpportunityTable;
