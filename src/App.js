@@ -95,8 +95,9 @@ const App = () => {
       </AppBar>
       <Container maxWidth='xl'>
         <h1>Opportunities</h1>
-        <Grid container direction='row' justify='flex-start' spacing={10}>
+        <Grid container direction='row' justify='flex-start' spacing={4}>
           <Grid item xs={12} md={8}>
+            <h2>List</h2>
             <OpportunityTable
               opportunities={opportunities}
               editRow={editRow}
@@ -105,13 +106,19 @@ const App = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             {editing ? (
-              <EditOpportunityForm
-                setEditing={setEditing}
-                currentOpportunity={currentOpportunity}
-                updateOpportunity={updateOpportunity}
-              />
+              <>
+                <h2>Edit</h2>
+                <EditOpportunityForm
+                  setEditing={setEditing}
+                  currentOpportunity={currentOpportunity}
+                  updateOpportunity={updateOpportunity}
+                />
+              </>
             ) : (
-              <AddOpportunity addOpportunity={addOpportunity} />
+              <>
+                <h2>Add</h2>
+                <AddOpportunity addOpportunity={addOpportunity} />
+              </>
             )}
           </Grid>
         </Grid>
