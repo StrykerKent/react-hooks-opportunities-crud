@@ -6,6 +6,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 import './OpportunityTableStyle.css'
 
 const OpportunityTable = (props) => (
@@ -16,6 +17,7 @@ const OpportunityTable = (props) => (
           <TableCell>Name</TableCell>
           <TableCell>Account</TableCell>
           <TableCell>Location</TableCell>
+          <TableCell></TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -26,6 +28,18 @@ const OpportunityTable = (props) => (
             </TableCell>
             <TableCell>{opportunity.account}</TableCell>
             <TableCell>{opportunity.location}</TableCell>
+            <TableCell>
+              <Button
+                type="submit"
+                variant="contained"
+                color="secondary"
+                size="large"
+                mt={2}
+                onClick={() => props.deleteOpportunity(opportunity.id)}
+              >
+                Delete
+              </Button>
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import MenuIcon from '@material-ui/icons/Menu'
+import { SettingsBackupRestoreSharp } from '@material-ui/icons'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -44,6 +45,10 @@ const App = () => {
     setOpportunity([...opportunities, opportunity])
   }
 
+  const deleteOpportunity = (id) => {
+    setOpportunity(opportunities.filter((opportunity) => opportunity.id !== id))
+  }
+
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -65,7 +70,7 @@ const App = () => {
         <h1>Opportunities</h1>
         <Grid container direction="row" justify="flex-start" spacing={10}>
           <Grid item xs={12} md={8}>
-            <OpportunityTable opportunities={opportunities} />
+            <OpportunityTable opportunities={opportunities} deleteOpportunity={deleteOpportunity} />
           </Grid>
           <Grid item xs={12} md={4}>
             <AddOpportunity addOpportunity={addOpportunity} />
