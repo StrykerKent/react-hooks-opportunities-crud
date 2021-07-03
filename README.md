@@ -4,21 +4,6 @@ A React application that displays data for opportunities where the user can crea
 
 [`Demo of this application`](http://www.stryker.dev/react-hooks-opportunities-crud)
 
-
-## Project Status
-
-Currently in development.
-
-- Completed
-  - Create
-  - Read
-- Not Completed
-  - Update
-  - Delete
-
-
 ## Created Using
 
-React, Hooks, Material UI, HTML, and CSS.
-
-
+React, Hooks, Material UI, JSX, HTML, and CSS.
